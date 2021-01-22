@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(images/image.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.countdown-container {
+  display: flex;
+
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+@media (max-width: 678px) {
+  h1 {
+    font-size: 2rem !important;
+    margin-top: 2rem;
+  }
+  h2 {
+    margin-top: 2rem;
+  }
+  .countdown-container {
+    flex-direction: column;
+  }
+  .big-text {
+    font-size: 3rem;
+  }
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px #161414;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px #161414;
+}
+.big-text {
+  font-size: 5rem;
+  line-height: 1;
+  margin: 0 2rem;
+  font-weight: 700;
+}
+.countdown-box {
+  text-align: center;
+}
+.countdown-box span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
